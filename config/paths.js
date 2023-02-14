@@ -20,6 +20,9 @@ const publicUrlOrPath = getPublicUrlOrPath(
   require(resolveApp('package.json')).homepage,
   process.env.PUBLIC_URL
 );
+// console.log('publicUrlOrPath:', publicUrlOrPath, process.env.NODE_ENV === 'development',
+// require(resolveApp('package.json')).homepage,
+// process.env.PUBLIC_URL);
 
 const buildPath = process.env.BUILD_PATH || 'docs';
 
